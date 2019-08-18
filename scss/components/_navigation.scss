@@ -1,0 +1,36 @@
+/* =============
+    Navigation
+============= */
+
+header {
+    ul {
+        font-family: 'Rubik Mono One', sans-serif;
+            margin: 10px 0 10px 10px;
+
+        @include md {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        li {
+
+            a:link, a:visited{
+                display: inline-block;
+                color: $white;
+                padding: 5px 0;
+
+            @include md {
+                padding: 20px 10px 0;
+                color: $black;
+
+            }
+            
+
+
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,48 @@
+/* =============
+    Base
+============= */
+
+body {
+    background-image: url("../img/Texture.png");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: repeat-y;
+}
+p,h1,h2,h3,h4,h5,figure{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-areas: ". content .";
+
+    @include md {
+        grid-template-columns: 40px auto 40px;
+    }
+
+    .content{
+        grid-area: content;
+    }
+}
+
+.space {
+    padding: 50px 0;
+    @include lg {
+        padding: 100px 0;
+    }
+}
