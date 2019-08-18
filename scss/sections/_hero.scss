@@ -1,0 +1,48 @@
+/* =============
+    Hero
+============= */
+
+#hero {
+    padding-right: 30px;
+    font-weight: 700;
+}
+
+#heroimg {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+
+        li:nth-child(1) {
+            background-image: url("../img/hero/hero.jpg");
+            background-size: cover;
+            background-position: 55% center;
+            height: 60vh;
+            margin-left: 20px;
+            grid-column: 1 / span 10;
+            grid-row: 1 / span 9;
+        }
+        li:nth-child(2) {
+            background-image: url("../img/hero/sign.png");
+            background-size: contain;
+            background-position: 55% center;
+            height: 170px;
+            background-repeat: no-repeat;
+            grid-column: 1 / span 5;
+            grid-row: 8 / span 3;
+            margin-left: -20px;
+        }
+    }
+}
+
+#about {
+    div {
+    p {
+        padding-bottom: 30px;
+        line-height: 21px;
+    }
+    p:last-child {
+        padding-bottom: 0;
+    }
+}
+}
