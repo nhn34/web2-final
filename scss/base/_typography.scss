@@ -3,5 +3,10 @@
 ============= */
 body{
     font-family: 'Roboto Mono', monospace;
-
+    h1 {
+        font-family: 'Rubik Mono One', sans-serif;
+        color: $red;
+        font-size: rem-calc(26);
+        padding-bottom: 40px;
+    }
 }

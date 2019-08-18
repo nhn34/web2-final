@@ -352,6 +352,11 @@ a {
 ============= */
 body {
   font-family: 'Roboto Mono', monospace; }
+  body h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #D21D1E;
+    font-size: 1.625rem;
+    padding-bottom: 40px; }
 
 /* =============
     Buttons
@@ -489,3 +494,10 @@ header div {
 
 #about div p:last-child {
   padding-bottom: 0; }
+
+/* =============
+    Where
+============= */
+#where h1 {
+  text-align: right;
+  padding-left: 20px; }
