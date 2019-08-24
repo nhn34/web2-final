@@ -1,0 +1,40 @@
+/* =============
+    Menu
+============= */
+
+#menu {
+
+    background-image: url("../img/Texture.png");
+    background-color: $yellow;
+    background-blend-mode: multiply;
+
+
+    div {
+
+    #video {
+        padding-bottom: 50px;
+    }
+
+    div {
+        a:link, a:visited {
+            padding: 25px 0;
+            background-color: $red;
+            color: $white;
+            display: inline-block;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            margin: 30px 0 50px;
+        }
+    }
+}
+}
+
+#divider2 {
+    background-image: url("../img/menu/animal2.png");
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin: 35vh 0;
+}

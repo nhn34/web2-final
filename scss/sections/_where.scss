@@ -3,8 +3,69 @@
 ============= */
 
 #where {
+    overflow-x: hidden;
+    div {
     h1 {
         text-align: right;
         padding-left: 20px;
     }
+
+    p {
+        font-weight: 700;
+        text-align: right;
+    }
+    div {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 0 60px;
+    a {
+        display: inline-block;
+        color: $yellow;
+        font-weight: 700;
+        padding: 10px 15px;
+        border: 1px solid $yellow;
+
+    }
+}
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        padding-bottom: 60px;
+
+        li:nth-child(2) {
+            background-image: url("../img/where/where.jpg");
+            background-size: cover;
+            height: 330px;
+            grid-row: 1 / span 10;
+            grid-column: 1 / span 8;
+        }
+
+        li:nth-child(3) {
+            background-image: url("../img/where/people.png");
+            background-size: cover;
+            grid-row: 7 / span 4;
+            grid-column: 6 / span 5;
+            margin-right: -30px;
+
+        }
+    }
+
+    article {
+        background-image: url("../img/where/poster1.png");
+        background-size: cover;
+        height: 390px;
+        margin-left: -30px;
+    }
+}
+}
+
+#divider1 {
+    background-image: url("../img/where/stamp3.png");
+    background-position: center;
+    background-size: contain;
+    height: 80px;
+    background-repeat: no-repeat;
+    margin: 35vh 0;
 }

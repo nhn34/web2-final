@@ -1,0 +1,79 @@
+/* =============
+    Reviews
+============= */
+
+#reviews {
+    overflow-x: hidden;
+    div {
+        h1 {
+            text-align: right;
+        }
+
+        p {
+            span {
+                font-weight: 700;
+            }
+        }
+
+        article:nth-child(3) {
+            padding-bottom: 50px;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(10, 1fr);
+
+                li:nth-child(1) {
+                    background-image: url("../img/reviews/review1.jpg");
+                    height: 220px;
+                    grid-column: 2 / span 9;
+                    grid-row: 3 / span 7;
+                    background-size: cover;
+                }
+                li:nth-child(2) {
+                    background-image: url("../img/reviews/poster2.png");
+                    grid-column: 8 / span 3;
+                    grid-row: 1 / span 5;
+                    background-size: cover;
+                    margin-right: -50px;
+                }
+                li:nth-child(3) {
+                    background-color: $yellow;
+                    mix-blend-mode: multiply;
+                    grid-column: 1 / span 5;
+                    grid-row: 7 / span 4;
+
+                }
+            }
+        }
+
+        article:nth-child(5) {
+            padding-top: 50px;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(10, 1fr);
+
+                li:nth-child(1) {
+                    background-image: url("../img/reviews/review2.jpg");
+                    height: 250px;
+                    grid-column: 1 / span 8;
+                    grid-row: 1 / span 9;
+                    background-size: cover;
+                    background-position: center;
+                }
+                li:nth-child(2) {
+                    background-image: url("../img/reviews/stamp.png");
+                    grid-column: 7 / span 4;
+                    grid-row: 6 / span 5;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
+                li:nth-child(3) {
+                    display: none;
+
+                }
+            }
+        }
+    }
+}

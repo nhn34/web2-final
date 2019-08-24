@@ -60,17 +60,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/An_Choi-6.jpg": {
-		"ft": 16384,
-		"iS": 519012,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/An_Choi-6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/An_Choi_Bar.jpg": {
 		"ft": 16384,
 		"iS": 543811,
@@ -80,39 +69,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"/img/An_Choi_Bar_06.jpeg": {
-		"ft": 16384,
-		"iS": 2405067,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/An_Choi_Bar_06.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/animal.png": {
-		"ft": 32768,
-		"iS": 524376,
-		"oA": 0,
-		"oAP": "/img/animal.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/animal2.png": {
-		"ft": 32768,
-		"iS": 86380,
-		"oA": 0,
-		"oAP": "/img/animal2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/img/dho-1.png": {
@@ -170,12 +126,45 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/L1210243.jpg": {
+	"/img/menu/animal.png": {
+		"ft": 32768,
+		"iS": 524376,
+		"oA": 0,
+		"oAP": "/img/menu/animal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/menu/animal2.png": {
+		"ft": 32768,
+		"iS": 86380,
+		"oA": 0,
+		"oAP": "/img/menu/animal2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/menu/drinks.jpeg": {
 		"ft": 16384,
-		"iS": 1026784,
+		"iS": 2405067,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/L1210243.jpg",
+		"oAP": "/img/menu/drinks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/menu/food.jpg": {
+		"ft": 16384,
+		"iS": 519012,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/menu/food.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -192,33 +181,55 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/reviews/'.png": {
-		"ft": 32768,
-		"iS": 75315,
-		"oA": 0,
-		"oAP": "/img/reviews/'.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/reviews/tumblr_inline_mw018xybAy1s6aa5h.png": {
+	"/img/reviews/poster2.png": {
 		"ft": 32768,
 		"iS": 626274,
 		"oA": 0,
-		"oAP": "/img/reviews/tumblr_inline_mw018xybAy1s6aa5h.png",
+		"oAP": "/img/reviews/poster2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/stamp3.png": {
-		"ft": 32768,
-		"iS": 23723,
+	"/img/reviews/review1.jpg": {
+		"ft": 16384,
+		"iS": 1026784,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/stamp3.png",
+		"oAP": "/img/reviews/review1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/reviews/review2.jpg": {
+		"ft": 16384,
+		"iS": 2405067,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/reviews/review2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/reviews/stamp.png": {
+		"ft": 32768,
+		"iS": 75315,
+		"oA": 0,
+		"oAP": "/img/reviews/stamp.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/reviews/stamp4.png": {
+		"ft": 32768,
+		"iS": 12024,
+		"oA": 0,
+		"oAP": "/img/reviews/stamp4.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -274,6 +285,17 @@
 		"iS": 485092,
 		"oA": 0,
 		"oAP": "/img/where/poster1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/where/stamp3.png": {
+		"ft": 32768,
+		"iS": 23723,
+		"oA": 0,
+		"oAP": "/img/where/stamp3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -418,6 +440,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/components/_videoplayer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/components/_videoplayer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/helpers/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -492,6 +527,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/sections/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/_menu.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/sections/_menu.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/_reviews.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/sections/_reviews.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
