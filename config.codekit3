@@ -27,17 +27,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/img/an-choi-01.w1200.h630.jpg": {
-		"ft": 16384,
-		"iS": 190759,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/an-choi-01.w1200.h630.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/An_Choi-2.jpg": {
 		"ft": 16384,
 		"iS": 900882,
@@ -49,37 +38,92 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/An_Choi-5.jpg": {
+	"/img/gallery/an-choi-01.w1200.h630.jpg": {
 		"ft": 16384,
-		"iS": 1051125,
+		"iS": 190759,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/An_Choi-5.jpg",
+		"oAP": "/img/gallery/an-choi-01.w1200.h630.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/An_Choi_Bar.jpg": {
+	"/img/gallery/g1.jpg": {
 		"ft": 16384,
 		"iS": 543811,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/An_Choi_Bar.jpg",
+		"oAP": "/img/gallery/g1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/img/dho-1.png": {
-		"ft": 32768,
-		"iS": 586800,
+	"/img/gallery/g2.jpg": {
+		"ft": 16384,
+		"iS": 1829111,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/dho-1.png",
+		"oAP": "/img/gallery/g2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/gallery/g3.jpg": {
+		"ft": 16384,
+		"iS": 1671007,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/gallery/g3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/gallery/g4.png": {
+		"ft": 32768,
+		"iS": 67365,
+		"oA": 0,
+		"oAP": "/img/gallery/g4.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/img/gallery/g5.jpg": {
+		"ft": 16384,
+		"iS": 1051125,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/gallery/g5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/gallery/g6.jpg": {
+		"ft": 16384,
+		"iS": 208148,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/gallery/g6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/gallery/gn.jpg": {
+		"ft": 16384,
+		"iS": 154041,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/gallery/gn.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/img/header/logo.png": {
@@ -113,17 +157,6 @@
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
-		"q": 100
-		},
-	"/img/IMG_4613_V2.jpg": {
-		"ft": 16384,
-		"iS": 1671007,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/IMG_4613_V2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"/img/menu/animal.png": {
@@ -165,17 +198,6 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/menu/food.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/Pho_Bar-54.jpg": {
-		"ft": 16384,
-		"iS": 1829111,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/Pho_Bar-54.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -236,17 +258,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/stamp5.png": {
-		"ft": 32768,
-		"iS": 67365,
-		"oA": 0,
-		"oAP": "/img/stamp5.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/img/Texture.png": {
 		"ft": 32768,
 		"iS": 3225921,
@@ -256,17 +267,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
-		},
-	"/img/The-Duong---Trien-lam-tem-12.jpg": {
-		"ft": 16384,
-		"iS": 208148,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/The-Duong---Trien-lam-tem-12.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"/img/where/people.png": {
@@ -514,6 +514,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/sections/_burger.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/sections/_gallery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/sections/_gallery.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -2,5 +2,17 @@
     Footer
 ============= */
 footer{
-    
+    background-image: url("../img/Texture.png");
+    background-color: $red;
+    background-blend-mode: multiply;
+    color: $white;
+    text-align: center;
+    div {
+        p:nth-child(1) {
+            padding-bottom: 30px;
+        }
+        p:nth-child(3) {
+            padding-top: 30px;
+        }
+    }
 }

@@ -458,6 +458,17 @@ header div {
 /* =============
     Footer
 ============= */
+footer {
+  background-image: url("../img/Texture.png");
+  background-color: #D21D1E;
+  background-blend-mode: multiply;
+  color: #fff;
+  text-align: center; }
+  footer div p:nth-child(1) {
+    padding-bottom: 30px; }
+  footer div p:nth-child(3) {
+    padding-top: 30px; }
+
 /* =============
     Burger
 ============= */
@@ -593,7 +604,7 @@ header div {
 #divider2 {
   background-image: url("../img/menu/animal2.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   height: 200px;
   background-repeat: no-repeat;
   margin: 35vh 0; }
@@ -651,3 +662,91 @@ header div {
         background-repeat: no-repeat; }
       #reviews div article:nth-child(5) ul li:nth-child(3) {
         display: none; }
+
+#divider3 {
+  background-image: url("../img/reviews/stamp4.png");
+  background-position: center;
+  background-size: contain;
+  height: 80px;
+  background-repeat: no-repeat;
+  margin: 35vh 0; }
+
+/* =============
+    Gallery
+============= */
+#gallery div h1 {
+  text-align: right;
+  padding-bottom: 50px; }
+
+#gallery div div {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px; }
+  #gallery div div a {
+    display: inline-block;
+    color: #D21D1E;
+    border: 1px solid #D21D1E;
+    padding: 15px 20px;
+    font-weight: 700; }
+
+#gallery div ul:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr); }
+  #gallery div ul:nth-child(2) li:nth-child(1) {
+    background-image: url("../img/gallery/g1.jpg");
+    height: 290px;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 8; }
+  #gallery div ul:nth-child(2) li:nth-child(2) {
+    background-image: url("../img/gallery/g2.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 5 / span 6;
+    grid-row: 6 / span 5; }
+
+#gallery div ul:nth-child(3) {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr); }
+  #gallery div ul:nth-child(3) li:nth-child(1) {
+    background-image: url("../img/gallery/gn.jpg");
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 8; }
+  #gallery div ul:nth-child(3) li:nth-child(2) {
+    background-image: url("../img/gallery/g4.png");
+    background-position: center;
+    background-size: cover;
+    grid-column: 6 / span 3;
+    grid-row: 6 / span 5; }
+
+#gallery div ul:nth-child(4) {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr); }
+  #gallery div ul:nth-child(4) li:nth-child(1) {
+    background-image: url("../img/gallery/g5.jpg");
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / span 10;
+    grid-row: 2 / span 8; }
+  #gallery div ul:nth-child(4) li:nth-child(2) {
+    background-image: url("../img/gallery/g6.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 2 / span 4;
+    grid-row: 7 / span 4; }
+  #gallery div ul:nth-child(4) li:nth-child(3) {
+    background-color: #D21D1E;
+    mix-blend-mode: multiply;
+    grid-column: 8 / span 3;
+    grid-row: 1 / span 4;
+    margin-right: -20px; }
