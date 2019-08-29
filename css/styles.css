@@ -357,6 +357,8 @@ body {
     color: #D21D1E;
     font-size: 1.625rem;
     padding-bottom: 40px; }
+  body p {
+    line-height: 24px; }
 
 /* =============
     Buttons
@@ -509,7 +511,7 @@ footer {
     background-image: url("../img/hero/hero.jpg");
     background-size: cover;
     background-position: 55% center;
-    height: 60vh;
+    height: 500px;
     margin-left: 20px;
     grid-column: 1 / span 10;
     grid-row: 1 / span 9; }
@@ -570,9 +572,36 @@ footer {
       margin-right: -30px; }
   #where div article {
     background-image: url("../img/where/poster1.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 390px;
-    margin-left: -30px; }
+    margin-left: -30px;
+    margin-bottom: 50px; }
+  #where div table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center; }
+    #where div table th, #where div table td {
+      padding: 5px 0; }
+    #where div table tr:nth-child(1) {
+      border-bottom: 1px solid #000;
+      color: #D21D1E; }
+      #where div table tr:nth-child(1) th:nth-child(1) {
+        border-right: 1px solid #000; }
+      #where div table tr:nth-child(1) th:nth-child(2) {
+        border-right: 1px solid #000; }
+    #where div table tr:nth-child(2) td:nth-child(1) {
+      border-right: 1px solid #000; }
+    #where div table tr:nth-child(2) td:nth-child(2) {
+      border-right: 1px solid #000; }
+    #where div table tr:nth-child(3) td:nth-child(1) {
+      border-right: 1px solid #000; }
+    #where div table tr:nth-child(3) td:nth-child(2) {
+      border-right: 1px solid #000; }
+    #where div table tr:nth-child(4) td:nth-child(1) {
+      border-right: 1px solid #000; }
+    #where div table tr:nth-child(4) td:nth-child(2) {
+      border-right: 1px solid #000; }
 
 #divider1 {
   background-image: url("../img/where/stamp3.png");
@@ -580,7 +609,7 @@ footer {
   background-size: contain;
   height: 80px;
   background-repeat: no-repeat;
-  margin: 35vh 0; }
+  margin: 35vh 0 50vh; }
 
 /* =============
     Menu
@@ -590,7 +619,8 @@ footer {
   background-color: #D6B36D;
   background-blend-mode: multiply; }
   #menu div #video {
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    margin-top: -45%; }
   #menu div div a:link, #menu div div a:visited {
     padding: 25px 0;
     background-color: #D21D1E;
@@ -604,8 +634,9 @@ footer {
 #divider2 {
   background-image: url("../img/menu/animal2.png");
   background-position: center;
-  background-size: cover;
-  height: 200px;
+  background-size: contain;
+  height: 250px;
+  width: 100vw;
   background-repeat: no-repeat;
   margin: 35vh 0; }
 

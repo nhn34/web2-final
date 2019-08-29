@@ -11,8 +11,10 @@
 
     div {
 
+
     #video {
         padding-bottom: 50px;
+        margin-top: -45%;
     }
 
     div {
@@ -33,8 +35,10 @@
 #divider2 {
     background-image: url("../img/menu/animal2.png");
     background-position: center;
-    background-size: cover;
-    height: 200px;
+    background-size: contain;
+    height: 250px;
+    width: 100vw;
+
     background-repeat: no-repeat;
     margin: 35vh 0;
 }
