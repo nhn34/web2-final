@@ -16,3 +16,36 @@ input[type=password],
 textarea {
     -webkit-appearance: none;
 }
+form{
+	display: grid;
+
+	grid-template-columns: 78% auto;
+	grid-template-areas:
+	"email button";
+
+
+	input{
+		width: 100%;
+		border: none;
+		padding: 10px;
+		// height: 30px;
+	}
+
+	div:nth-child(1){
+		grid-area: email;
+	}
+	div:nth-child(2){
+		grid-area: button;
+		display: inline-block;
+		display: flex;
+		justify-content: center;
+		button{
+			border: none;
+			color: $white;
+			background-color: $yellow;
+			padding: 10px;
+		 	width: 100%;
+			font-weight: 700;
+		}
+	}
+}

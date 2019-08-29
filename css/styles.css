@@ -388,6 +388,29 @@ input[type=password],
 textarea {
   -webkit-appearance: none; }
 
+form {
+  display: grid;
+  grid-template-columns: 78% auto;
+  grid-template-areas: "email button"; }
+  form input {
+    width: 100%;
+    border: none;
+    padding: 10px; }
+  form div:nth-child(1) {
+    grid-area: email; }
+  form div:nth-child(2) {
+    grid-area: button;
+    display: inline-block;
+    display: flex;
+    justify-content: center; }
+    form div:nth-child(2) button {
+      border: none;
+      color: #fff;
+      background-color: #D6B36D;
+      padding: 10px;
+      width: 100%;
+      font-weight: 700; }
+
 /* =============
     Navigation
 ============= */
@@ -481,10 +504,20 @@ footer {
   background-blend-mode: multiply;
   color: #fff;
   text-align: center; }
-  footer div p:nth-child(1) {
+  footer div section p:nth-child(1) {
     padding-bottom: 30px; }
-  footer div p:nth-child(3) {
-    padding-top: 30px; }
+    @media (min-width: 703px) {
+      footer div section p:nth-child(1) {
+        grid-area: content; } }
+  @media (min-width: 703px) {
+    footer div section {
+      display: grid;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-areas: ". content ." ". form .";
+      padding-bottom: 30px; } }
+  @media (min-width: 703px) and (min-width: 703px) {
+    footer div section form {
+      grid-area: form; } }
 
 /* =============
     Burger
