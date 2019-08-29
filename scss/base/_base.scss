@@ -40,6 +40,20 @@ a{
     }
 }
 
+.heading-grid{
+    @include md {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-areas: ". content .";
+}
+
+    .heading-grid-item{
+        @include md {
+        grid-area: content;
+    }
+    }
+}
+
 .space {
     padding: 50px 0;
     @include lg {

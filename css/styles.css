@@ -341,6 +341,16 @@ a {
   .grid .content {
     grid-area: content; }
 
+@media (min-width: 703px) {
+  .heading-grid {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-areas: ". content ."; } }
+
+@media (min-width: 703px) {
+  .heading-grid .heading-grid-item {
+    grid-area: content; } }
+
 .space {
   padding: 50px 0; }
   @media (min-width: 950px) {
@@ -383,8 +393,9 @@ textarea {
 ============= */
 header ul {
   font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.125rem;
   margin: 10px 0 10px 10px; }
-  @media (min-width: 703px) {
+  @media (min-width: 950px) {
     header ul {
       display: flex;
       justify-content: flex-start;
@@ -393,7 +404,7 @@ header ul {
     display: inline-block;
     color: #fff;
     padding: 5px 0; }
-    @media (min-width: 703px) {
+    @media (min-width: 950px) {
       header ul li a:link, header ul li a:visited {
         padding: 20px 10px 0;
         color: #000; } }
@@ -431,7 +442,7 @@ header div {
   grid-template-areas: "bars logo" "nav nav"; }
   header div section:nth-child(1) {
     grid-area: bars; }
-    @media (min-width: 703px) {
+    @media (min-width: 950px) {
       header div section:nth-child(1) {
         display: none; } }
     header div section:nth-child(1) button {
@@ -447,12 +458,16 @@ header div {
     background-repeat: no-repeat;
     background-position: center right;
     margin: 10px 20px 0 0; }
+    @media (min-width: 703px) {
+      header div section:nth-child(2) {
+        margin-right: 40px;
+        margin-bottom: 40px; } }
   header div nav {
     grid-area: nav;
     background-color: black;
     margin: 0 0 0 20px;
     display: none; }
-    @media (min-width: 703px) {
+    @media (min-width: 950px) {
       header div nav {
         background-color: inherit;
         display: block !important; } }
@@ -484,6 +499,9 @@ footer {
   outline: none;
   position: relative;
   width: 30px; }
+  @media (min-width: 703px) {
+    #burger-container {
+      margin-left: 40px; } }
   #burger-container div {
     background-color: #000;
     height: 2px;
@@ -499,23 +517,54 @@ footer {
 /* =============
     Hero
 ============= */
-#hero {
-  padding-right: 30px;
-  font-weight: 700; }
+.grid2 {
+  display: grid;
+  grid-template-columns: 20px auto 0;
+  grid-template-areas: ". content ."; }
+  @media (min-width: 703px) {
+    .grid2 {
+      grid-template-columns: 40px auto 0; } }
+  .grid2 .content2 {
+    grid-area: content; }
 
-#heroimg ul {
+@media (min-width: 703px) {
+  #heroimg div {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "text hero"; } }
+
+#heroimg div p {
+  padding: 50px 50px 50px 0;
+  font-weight: 700; }
+  @media (min-width: 703px) {
+    #heroimg div p {
+      grid-area: text;
+      padding-right: 40px;
+      display: flex;
+      align-items: center; } }
+
+#heroimg div ul {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr); }
-  #heroimg ul li:nth-child(1) {
+  @media (min-width: 703px) {
+    #heroimg div ul {
+      grid-area: hero; } }
+  #heroimg div ul li:nth-child(1) {
     background-image: url("../img/hero/hero.jpg");
     background-size: cover;
     background-position: 55% center;
     height: 500px;
-    margin-left: 20px;
     grid-column: 1 / span 10;
-    grid-row: 1 / span 9; }
-  #heroimg ul li:nth-child(2) {
+    grid-row: 1 / span 10; }
+    @media (min-width: 567px) {
+      #heroimg div ul li:nth-child(1) {
+        height: 600px; } }
+    @media (min-width: 703px) {
+      #heroimg div ul li:nth-child(1) {
+        height: 360px;
+        margin-left: 0; } }
+  #heroimg div ul li:nth-child(2) {
     background-image: url("../img/hero/sign.png");
     background-size: contain;
     background-position: 55% center;
@@ -524,6 +573,19 @@ footer {
     grid-column: 1 / span 5;
     grid-row: 8 / span 3;
     margin-left: -20px; }
+    @media (min-width: 703px) {
+      #heroimg div ul li:nth-child(2) {
+        grid-row: 7/ span 4; } }
+
+@media (min-width: 703px) {
+  #about {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-areas: ". text ."; } }
+
+@media (min-width: 703px) {
+  #about div {
+    grid-area: text; } }
 
 #about div p {
   padding-bottom: 30px;
@@ -537,70 +599,118 @@ footer {
 ============= */
 #where {
   overflow-x: hidden; }
-  #where div h1 {
+  #where div article h1 {
     text-align: right;
     padding-left: 20px; }
-  #where div p {
-    font-weight: 700;
-    text-align: right; }
-  #where div div {
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px 0 60px; }
-    #where div div a {
-      display: inline-block;
-      color: #D6B36D;
-      font-weight: 700;
-      padding: 10px 15px;
-      border: 1px solid #D6B36D; }
-  #where div ul {
+  @media (min-width: 703px) {
+    #where div section:nth-child(2) {
+      display: grid;
+      grid-template-columns: 50% 25% auto;
+      grid-template-areas: "img text ."; } }
+  #where div section:nth-child(2) ul {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     padding-bottom: 60px; }
-    #where div ul li:nth-child(2) {
+    @media (min-width: 703px) {
+      #where div section:nth-child(2) ul {
+        grid-area: img; } }
+    @media (min-width: 703px) {
+      #where div section:nth-child(2) ul li:nth-child(1) {
+        background-color: #D6B36D;
+        mix-blend-mode: multiply;
+        grid-row: 1 / span 8;
+        grid-column: 1 / span 4;
+        margin-left: -40px;
+        margin-top: -120px; } }
+    #where div section:nth-child(2) ul li:nth-child(2) {
       background-image: url("../img/where/where.jpg");
       background-size: cover;
       height: 330px;
       grid-row: 1 / span 10;
       grid-column: 1 / span 8; }
-    #where div ul li:nth-child(3) {
+      @media (min-width: 703px) {
+        #where div section:nth-child(2) ul li:nth-child(2) {
+          grid-column: 1 / span 10;
+          grid-row: 1 / span 9;
+          height: 230px; } }
+    #where div section:nth-child(2) ul li:nth-child(3) {
       background-image: url("../img/where/people.png");
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       grid-row: 7 / span 4;
       grid-column: 6 / span 5;
       margin-right: -30px; }
-  #where div article {
+      @media (min-width: 703px) {
+        #where div section:nth-child(2) ul li:nth-child(3) {
+          grid-column: 7 / span 4;
+          margin-left: 60px;
+          margin-right: -60px;
+          grid-row: 8 / span 3; } }
+  @media (min-width: 703px) {
+    #where div section:nth-child(2) aside {
+      grid-area: text; } }
+  #where div section:nth-child(2) aside p {
+    font-weight: 700;
+    text-align: right; }
+  #where div section:nth-child(2) aside div {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0 60px; }
+    #where div section:nth-child(2) aside div a {
+      display: inline-block;
+      color: #D6B36D;
+      font-weight: 700;
+      padding: 10px 15px;
+      border: 1px solid #D6B36D; }
+  @media (min-width: 703px) {
+    #where div section:nth-child(3) {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas: ". table table ." ". . poster poster"; } }
+  #where div section:nth-child(3) aside {
     background-image: url("../img/where/poster1.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 390px;
     margin-left: -30px;
     margin-bottom: 50px; }
-  #where div table {
+    @media (min-width: 567px) {
+      #where div section:nth-child(3) aside {
+        background-position: right; } }
+    @media (min-width: 703px) {
+      #where div section:nth-child(3) aside {
+        grid-area: poster;
+        margin-bottom: 0; } }
+  @media (min-width: 703px) {
+    #where div section:nth-child(3) article {
+      grid-area: table;
+      padding-bottom: 60px; } }
+  #where div section:nth-child(3) article table {
     border-collapse: collapse;
     width: 100%;
     text-align: center; }
-    #where div table th, #where div table td {
+    #where div section:nth-child(3) article table td,
+    #where div section:nth-child(3) article table th {
       padding: 5px 0; }
-    #where div table tr:nth-child(1) {
+    #where div section:nth-child(3) article table tr:nth-child(1) {
       border-bottom: 1px solid #000;
       color: #D21D1E; }
-      #where div table tr:nth-child(1) th:nth-child(1) {
+      #where div section:nth-child(3) article table tr:nth-child(1) th:nth-child(1) {
         border-right: 1px solid #000; }
-      #where div table tr:nth-child(1) th:nth-child(2) {
+      #where div section:nth-child(3) article table tr:nth-child(1) th:nth-child(2) {
         border-right: 1px solid #000; }
-    #where div table tr:nth-child(2) td:nth-child(1) {
+    #where div section:nth-child(3) article table tr:nth-child(2) td:nth-child(1) {
       border-right: 1px solid #000; }
-    #where div table tr:nth-child(2) td:nth-child(2) {
+    #where div section:nth-child(3) article table tr:nth-child(2) td:nth-child(2) {
       border-right: 1px solid #000; }
-    #where div table tr:nth-child(3) td:nth-child(1) {
+    #where div section:nth-child(3) article table tr:nth-child(3) td:nth-child(1) {
       border-right: 1px solid #000; }
-    #where div table tr:nth-child(3) td:nth-child(2) {
+    #where div section:nth-child(3) article table tr:nth-child(3) td:nth-child(2) {
       border-right: 1px solid #000; }
-    #where div table tr:nth-child(4) td:nth-child(1) {
+    #where div section:nth-child(3) article table tr:nth-child(4) td:nth-child(1) {
       border-right: 1px solid #000; }
-    #where div table tr:nth-child(4) td:nth-child(2) {
+    #where div section:nth-child(3) article table tr:nth-child(4) td:nth-child(2) {
       border-right: 1px solid #000; }
 
 #divider1 {
@@ -610,6 +720,9 @@ footer {
   height: 80px;
   background-repeat: no-repeat;
   margin: 35vh 0 50vh; }
+  @media (min-width: 703px) {
+    #divider1 {
+      margin: 35vh 0 80vh; } }
 
 /* =============
     Menu
@@ -621,6 +734,22 @@ footer {
   #menu div #video {
     padding-bottom: 50px;
     margin-top: -45%; }
+    @media (min-width: 703px) {
+      #menu div #video {
+        margin-top: -35%; } }
+  #menu div h1 {
+    text-align: center; }
+  @media (min-width: 703px) {
+    #menu div div {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "text link";
+      grid-gap: 20px; } }
+  @media (min-width: 703px) {
+    #menu div div p {
+      display: flex;
+      align-items: center;
+      grid-area: text; } }
   #menu div div a:link, #menu div div a:visited {
     padding: 25px 0;
     background-color: #D21D1E;
@@ -630,27 +759,52 @@ footer {
     display: flex;
     justify-content: center;
     margin: 30px 0 50px; }
+    @media (min-width: 703px) {
+      #menu div div a:link, #menu div div a:visited {
+        grid-area: link; } }
 
 #divider2 {
   background-image: url("../img/menu/animal2.png");
   background-position: center;
   background-size: contain;
-  height: 250px;
+  height: 500px;
   width: 100vw;
   background-repeat: no-repeat;
-  margin: 35vh 0; }
+  margin: 30vh 0; }
+  @media (min-width: 703px) {
+    #divider2 {
+      background-image: url("../img/menu/animal.png");
+      height: 180px;
+      margin: 25vh 0 22vh; } }
 
 /* =============
     Reviews
 ============= */
 #reviews {
   overflow-x: hidden; }
+  @media (min-width: 703px) {
+    #reviews div {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas: ". h1 h1 ." "p1 p1 . ." ". i1 i1 i1" "p2 p2 . ." "i2 i2 i2 ."; } }
   #reviews div h1 {
     text-align: right; }
+    @media (min-width: 703px) {
+      #reviews div h1 {
+        grid-area: h1; } }
   #reviews div p span {
     font-weight: 700; }
+  @media (min-width: 703px) {
+    #reviews div p:nth-child(2) {
+      grid-area: p1; } }
+  @media (min-width: 703px) {
+    #reviews div p:nth-child(4) {
+      grid-area: p2; } }
   #reviews div article:nth-child(3) {
     padding-bottom: 50px; }
+    @media (min-width: 703px) {
+      #reviews div article:nth-child(3) {
+        grid-area: i1; } }
     #reviews div article:nth-child(3) ul {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
@@ -661,6 +815,9 @@ footer {
         grid-column: 2 / span 9;
         grid-row: 3 / span 7;
         background-size: cover; }
+        @media (min-width: 567px) {
+          #reviews div article:nth-child(3) ul li:nth-child(1) {
+            height: 300px; } }
       #reviews div article:nth-child(3) ul li:nth-child(2) {
         background-image: url("../img/reviews/poster2.png");
         grid-column: 8 / span 3;
@@ -674,6 +831,9 @@ footer {
         grid-row: 7 / span 4; }
   #reviews div article:nth-child(5) {
     padding-top: 50px; }
+    @media (min-width: 703px) {
+      #reviews div article:nth-child(5) {
+        grid-area: i2; } }
     #reviews div article:nth-child(5) ul {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
@@ -685,14 +845,31 @@ footer {
         grid-row: 1 / span 9;
         background-size: cover;
         background-position: center; }
+        @media (min-width: 703px) {
+          #reviews div article:nth-child(5) ul li:nth-child(1) {
+            grid-column: 1 / span 10;
+            grid-row: 3 / span 8;
+            height: 350px; } }
       #reviews div article:nth-child(5) ul li:nth-child(2) {
         background-image: url("../img/reviews/stamp.png");
         grid-column: 7 / span 4;
         grid-row: 6 / span 5;
         background-size: contain;
         background-repeat: no-repeat; }
-      #reviews div article:nth-child(5) ul li:nth-child(3) {
-        display: none; }
+        @media (min-width: 703px) {
+          #reviews div article:nth-child(5) ul li:nth-child(2) {
+            grid-column: 8 / span 3;
+            grid-row: 1 / span 5;
+            margin-left: 80px;
+            margin-right: -80px;
+            margin-top: -200px; } }
+      @media (min-width: 703px) {
+        #reviews div article:nth-child(5) ul li:nth-child(3) {
+          background-color: #D6B36D;
+          mix-blend-mode: multiply;
+          grid-column: 1 / span 3;
+          grid-row: 1 / span 7;
+          margin-left: -40px; } }
 
 #divider3 {
   background-image: url("../img/reviews/stamp4.png");
@@ -705,14 +882,26 @@ footer {
 /* =============
     Gallery
 ============= */
+@media (min-width: 703px) {
+  #gallery div {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: ". . h1 ." "ul1 ul1 ul1 ." ". ul2 ul2 ." ". ul3 ul3 ul3" ". . . a"; } }
+
 #gallery div h1 {
   text-align: right;
   padding-bottom: 50px; }
+  @media (min-width: 703px) {
+    #gallery div h1 {
+      grid-area: h1; } }
 
 #gallery div div {
   display: flex;
   justify-content: flex-end;
   padding-top: 30px; }
+  @media (min-width: 703px) {
+    #gallery div div {
+      grid-area: a; } }
   #gallery div div a {
     display: inline-block;
     color: #D21D1E;
@@ -724,6 +913,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr); }
+  @media (min-width: 703px) {
+    #gallery div ul:nth-child(2) {
+      grid-area: ul1; } }
   #gallery div ul:nth-child(2) li:nth-child(1) {
     background-image: url("../img/gallery/g1.jpg");
     height: 290px;
@@ -743,6 +935,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr); }
+  @media (min-width: 703px) {
+    #gallery div ul:nth-child(3) {
+      grid-area: ul2; } }
   #gallery div ul:nth-child(3) li:nth-child(1) {
     background-image: url("../img/gallery/gn.jpg");
     height: 200px;
@@ -762,6 +957,9 @@ footer {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr); }
+  @media (min-width: 703px) {
+    #gallery div ul:nth-child(4) {
+      grid-area: ul3; } }
   #gallery div ul:nth-child(4) li:nth-child(1) {
     background-image: url("../img/gallery/g5.jpg");
     height: 350px;
@@ -775,9 +973,18 @@ footer {
     background-size: cover;
     grid-column: 2 / span 4;
     grid-row: 7 / span 4; }
+    @media (min-width: 703px) {
+      #gallery div ul:nth-child(4) li:nth-child(2) {
+        grid-column: 1 / span 3;
+        margin-right: 50px;
+        margin-left: -50px; } }
   #gallery div ul:nth-child(4) li:nth-child(3) {
     background-color: #D21D1E;
     mix-blend-mode: multiply;
     grid-column: 8 / span 3;
     grid-row: 1 / span 4;
     margin-right: -20px; }
+    @media (min-width: 703px) {
+      #gallery div ul:nth-child(4) li:nth-child(3) {
+        margin-right: -40px;
+        margin-top: -90px; } }

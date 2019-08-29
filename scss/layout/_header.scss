@@ -13,7 +13,7 @@ header{
         section:nth-child(1) {
             grid-area: bars;
 
-            @include md {
+            @include lg {
                 display: none;
             }
 
@@ -34,6 +34,10 @@ header{
             background-repeat: no-repeat;
             background-position: center right;
             margin: 10px 20px 0 0;
+            @include md {
+                margin-right: 40px;
+                margin-bottom: 40px;
+            }
 }
 
         nav {
@@ -42,7 +46,7 @@ header{
             margin: 0 0 0 20px;
             display:none;
 
-            @include md {
+            @include lg {
                 background-color: inherit;
                 display: block !important;
             }

@@ -15,9 +15,31 @@
     #video {
         padding-bottom: 50px;
         margin-top: -45%;
+        @include md {
+            margin-top: -35%;
+        }
+    }
+
+    h1 {
+        text-align: center;
     }
 
     div {
+
+        @include md {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "text link";
+            grid-gap: 20px;
+        }
+
+        p {
+            @include md {
+                display: flex;
+                align-items: center;
+                grid-area: text;
+            }
+        }
         a:link, a:visited {
             padding: 25px 0;
             background-color: $red;
@@ -27,6 +49,9 @@
             display: flex;
             justify-content: center;
             margin: 30px 0 50px;
+            @include md {
+                grid-area: link;
+            }
         }
     }
 }
@@ -36,9 +61,15 @@
     background-image: url("../img/menu/animal2.png");
     background-position: center;
     background-size: contain;
-    height: 250px;
+    height: 500px;
     width: 100vw;
-
     background-repeat: no-repeat;
-    margin: 35vh 0;
+    margin: 30vh 0;
+
+    @include md {
+        background-image: url("../img/menu/animal.png");
+        height: 180px;
+        margin: 25vh 0 22vh;
+    }
+
 }

@@ -4,15 +4,34 @@
 
 #gallery {
     div {
+
+        @include md {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas:
+            ". . h1 ."
+            "ul1 ul1 ul1 ."
+            ". ul2 ul2 ."
+            ". ul3 ul3 ul3"
+            ". . . a";
+        }
     h1 {
         text-align: right;
         padding-bottom: 50px;
+        @include md {
+            grid-area: h1;
+        }
     }
 
     div {
         display: flex;
         justify-content: flex-end;
         padding-top: 30px;
+
+        @include md {
+            grid-area: a;
+
+        }
         a {
             display: inline-block;
             color: $red;
@@ -26,6 +45,10 @@
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(10, 1fr);
+
+        @include md {
+            grid-area: ul1;
+        }
 
         li:nth-child(1) {
             background-image: url("../img/gallery/g1.jpg");
@@ -49,6 +72,9 @@
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(10, 1fr);
+        @include md {
+            grid-area: ul2;
+        }
 
         li:nth-child(1) {
             background-image: url("../img/gallery/gn.jpg");
@@ -74,6 +100,10 @@
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(10, 1fr);
 
+        @include md {
+            grid-area: ul3;
+        }
+
         li:nth-child(1) {
             background-image: url("../img/gallery/g5.jpg");
             height: 350px;
@@ -89,6 +119,11 @@
             background-size: cover;
             grid-column: 2 / span 4;
             grid-row: 7 / span 4;
+            @include md {
+                grid-column: 1 / span 3;
+                margin-right: 50px;
+                margin-left: -50px;
+            }
         }
 
         li:nth-child(3) {
@@ -97,6 +132,11 @@
             grid-column: 8 / span 3;
             grid-row: 1 / span 4;
             margin-right: -20px;
+
+            @include md {
+                margin-right: -40px;
+                margin-top: -90px;
+            }
         }
     }
 }

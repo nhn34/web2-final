@@ -5,8 +5,22 @@
 #reviews {
     overflow-x: hidden;
     div {
+
+        @include md {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas:
+            ". h1 h1 ."
+            "p1 p1 . ."
+            ". i1 i1 i1"
+            "p2 p2 . ."
+            "i2 i2 i2 .";
+        }
         h1 {
             text-align: right;
+            @include md {
+                grid-area: h1;
+            }
         }
 
         p {
@@ -15,8 +29,22 @@
             }
         }
 
+        p:nth-child(2) {
+            @include md {
+                grid-area: p1;
+            }
+        }
+        p:nth-child(4) {
+            @include md {
+                grid-area: p2;
+            }
+        }
+
         article:nth-child(3) {
             padding-bottom: 50px;
+            @include md {
+                grid-area: i1;
+            }
             ul {
                 display: grid;
                 grid-template-columns: repeat(10, 1fr);
@@ -28,6 +56,9 @@
                     grid-column: 2 / span 9;
                     grid-row: 3 / span 7;
                     background-size: cover;
+                    @include sm {
+                        height: 300px;
+                    }
                 }
                 li:nth-child(2) {
                     background-image: url("../img/reviews/poster2.png");
@@ -48,6 +79,9 @@
 
         article:nth-child(5) {
             padding-top: 50px;
+            @include md {
+                grid-area: i2;
+            }
             ul {
                 display: grid;
                 grid-template-columns: repeat(10, 1fr);
@@ -60,6 +94,11 @@
                     grid-row: 1 / span 9;
                     background-size: cover;
                     background-position: center;
+                    @include md {
+                        grid-column: 1 / span 10;
+                        grid-row: 3 / span 8;
+                        height: 350px;
+                    }
                 }
                 li:nth-child(2) {
                     background-image: url("../img/reviews/stamp.png");
@@ -67,10 +106,23 @@
                     grid-row: 6 / span 5;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    @include md {
+                        grid-column: 8 / span 3;
+                        grid-row: 1 / span 5;
+                        margin-left: 80px;
+                        margin-right: -80px;
+                        margin-top: -200px;
+                    }
 
                 }
                 li:nth-child(3) {
-                    display: none;
+                    @include md {
+                        background-color: $yellow;
+                        mix-blend-mode: multiply;
+                        grid-column: 1 / span 3;
+                        grid-row: 1 / span 7;
+                        margin-left: -40px;
+                    }
 
                 }
             }
@@ -85,4 +137,5 @@
     height: 80px;
     background-repeat: no-repeat;
     margin: 35vh 0;
+    
 }
