@@ -2,6 +2,10 @@
     Header
 ============= */
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 
     div {
         display: grid;
@@ -9,6 +13,12 @@ header{
         grid-template-areas:
         "bars logo"
         "nav nav";
+
+        @include lg {
+            grid-template-areas:
+            "logo bars"
+            "nav nav";
+        }
 
         section:nth-child(1) {
             grid-area: bars;
@@ -36,7 +46,12 @@ header{
             margin: 10px 20px 0 0;
             @include md {
                 margin-right: 40px;
-                margin-bottom: 40px;
+            }
+            @include lg {
+                margin-right:0;
+                background-position: center left;
+                margin-left: 60px;
+                margin-top: 45px;
             }
 }
 
@@ -46,9 +61,13 @@ header{
             margin: 0 0 0 20px;
             display:none;
 
+            @include md {
+                margin: 0 0 0 40px;
+            }
             @include lg {
                 background-color: inherit;
                 display: block !important;
+                margin: 22vh 0 0 60px;
             }
 
 

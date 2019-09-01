@@ -4,6 +4,7 @@
 
 #reviews {
     overflow-x: hidden;
+    padding-top: 0;
     div {
 
         @include md {
@@ -136,6 +137,6 @@
     background-size: contain;
     height: 80px;
     background-repeat: no-repeat;
-    margin: 35vh 0;
-    
+    margin: 25vh 0;
+
 }

@@ -17,6 +17,10 @@
 
 
 #heroimg {
+    padding-top: 40px;
+    @include md {
+        padding-top: 60px;
+    }
     div{
         @include md {
             display: grid;
@@ -24,14 +28,38 @@
             grid-template-areas:
             "text hero";
         }
-    p {
+
+        @include lg {
+            grid-template-areas:
+            ". text"
+            ". hero";
+
+        }
+    p:nth-child(1) {
         padding: 50px 50px 50px 0;
         font-weight: 700;
         @include md {
+            display: none;
+        }
+        @include lg {
+            display: block;
             grid-area: text;
-            padding-right: 40px;
+            text-align: right;
+            padding: 0 60px 50px 0;
+        }
+    }
+
+    p:nth-child(2) {
+        display: none;
+        @include md {
+            display: block;
+            grid-area: text;
             display: flex;
             align-items: center;
+            font-weight: 700;
+        }
+        @include lg {
+            display: none;
         }
     }
     ul {
@@ -58,6 +86,10 @@
                 height: 360px;
                 margin-left: 0;
             }
+
+            @include lg {
+                height: 500px;
+            }
         }
         li:nth-child(2) {
             background-image: url("../img/hero/sign.png");
@@ -71,6 +103,20 @@
 
             @include md {
                 grid-row: 7/ span 4;
+            }
+            @include lg {
+                grid-row: 8/ span 3;
+                margin-left: -150px;
+            }
+        }
+
+        li:nth-child(3) {
+            @include lg {
+                background-color: $red;
+                mix-blend-mode: multiply;
+                grid-row: 1 / span 2;
+                grid-column: 3 / span 8;
+                margin-top: -140px;
             }
         }
     }

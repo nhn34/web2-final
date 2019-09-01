@@ -16,7 +16,7 @@
         padding-bottom: 50px;
         margin-top: -45%;
         @include md {
-            margin-top: -35%;
+            margin-top: -38%;
         }
     }
 
@@ -61,15 +61,15 @@
     background-image: url("../img/menu/animal2.png");
     background-position: center;
     background-size: contain;
-    height: 500px;
+    height: 400px;
     width: 100vw;
     background-repeat: no-repeat;
-    margin: 30vh 0;
+    margin: 20vh 0;
 
     @include md {
         background-image: url("../img/menu/animal.png");
         height: 180px;
-        margin: 25vh 0 22vh;
+        margin: 25vh 0;
     }
 
 }

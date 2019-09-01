@@ -5,20 +5,24 @@
     overflow-x: hidden;
 
     div {
-        article {
-            h1 {
-                text-align: right;
-                padding-left: 20px;
-            }
+        @include md {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas:
+        ". h1 h1 ."
+        "img img text ."
+        ". table table ."
+        ". . poster poster";
         }
 
-        section:nth-child(2) {
-            @include md {
-                display: grid;
-                grid-template-columns: 50% 25% auto;
-                grid-template-areas: "img text .";
-            }
+            h1 {
+                    text-align: right;
+                @include md {
+                    grid-area: h1;
+                    padding-left: 50px;
 
+                }
+            }
             ul {
                 display: grid;
                 grid-template-columns: repeat(10, 1fr);
@@ -68,7 +72,7 @@
                 }
             }
 
-            aside {
+            aside:nth-child(3) {
                 @include md {
                     grid-area: text;
                 }
@@ -76,6 +80,9 @@
                 p {
                     font-weight: 700;
                     text-align: right;
+                    @include md {
+                        padding-left: 30px;
+                    }
                 }
 
                 div {
@@ -94,15 +101,8 @@
             }
         }
 
-        section:nth-child(3) {
-            @include md {
-                display: grid;
-                grid-template-columns: 25% 25% 25% 25%;
-                grid-template-areas:
-                ". table table ."
-                ". . poster poster";
-            }
-            aside {
+
+            aside:nth-child(4) {
                 background-image: url("../img/where/poster1.png");
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -177,8 +177,8 @@
                 }
             }
         }
-        }
-    }
+
+
 }
 
 #divider1 {
@@ -187,9 +187,9 @@
     background-size: contain;
     height: 80px;
     background-repeat: no-repeat;
-    margin: 35vh 0 50vh;
+    margin: 25vh 0 45vh;
 
     @include md {
-        margin: 35vh 0 80vh;
+        margin: 25vh 0 75vh;
     }
 }

@@ -338,6 +338,9 @@ a {
   @media (min-width: 703px) {
     .grid {
       grid-template-columns: 40px auto 40px; } }
+  @media (min-width: 950px) {
+    .grid {
+      grid-template-columns: 60px auto 60px; } }
   .grid .content {
     grid-area: content; }
 
@@ -418,19 +421,16 @@ header ul {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 1.125rem;
   margin: 10px 0 10px 10px; }
-  @media (min-width: 950px) {
-    header ul {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; } }
   header ul li a:link, header ul li a:visited {
     display: inline-block;
     color: #fff;
     padding: 5px 0; }
     @media (min-width: 950px) {
       header ul li a:link, header ul li a:visited {
-        padding: 20px 10px 0;
+        padding: 10px 0;
         color: #000; } }
+  header ul li a:hover, header ul li a:active {
+    color: #D21D1E; }
 
 /* =============
     Video player
@@ -459,41 +459,58 @@ header ul {
 /* =============
     Header
 ============= */
-header div {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-areas: "bars logo" "nav nav"; }
-  header div section:nth-child(1) {
-    grid-area: bars; }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+  header div {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "bars logo" "nav nav"; }
     @media (min-width: 950px) {
-      header div section:nth-child(1) {
-        display: none; } }
-    header div section:nth-child(1) button {
-      background-color: white;
-      border: none;
-      outline: none;
-      padding: 0 0 10px 0; }
-  header div section:nth-child(2) {
-    background-image: url("../img/header/logo.png");
-    height: 40px;
-    background-size: contain;
-    grid-area: logo;
-    background-repeat: no-repeat;
-    background-position: center right;
-    margin: 10px 20px 0 0; }
-    @media (min-width: 703px) {
-      header div section:nth-child(2) {
-        margin-right: 40px;
-        margin-bottom: 40px; } }
-  header div nav {
-    grid-area: nav;
-    background-color: black;
-    margin: 0 0 0 20px;
-    display: none; }
-    @media (min-width: 950px) {
-      header div nav {
-        background-color: inherit;
-        display: block !important; } }
+      header div {
+        grid-template-areas: "logo bars" "nav nav"; } }
+    header div section:nth-child(1) {
+      grid-area: bars; }
+      @media (min-width: 950px) {
+        header div section:nth-child(1) {
+          display: none; } }
+      header div section:nth-child(1) button {
+        background-color: white;
+        border: none;
+        outline: none;
+        padding: 0 0 10px 0; }
+    header div section:nth-child(2) {
+      background-image: url("../img/header/logo.png");
+      height: 40px;
+      background-size: contain;
+      grid-area: logo;
+      background-repeat: no-repeat;
+      background-position: center right;
+      margin: 10px 20px 0 0; }
+      @media (min-width: 703px) {
+        header div section:nth-child(2) {
+          margin-right: 40px; } }
+      @media (min-width: 950px) {
+        header div section:nth-child(2) {
+          margin-right: 0;
+          background-position: center left;
+          margin-left: 60px;
+          margin-top: 45px; } }
+    header div nav {
+      grid-area: nav;
+      background-color: black;
+      margin: 0 0 0 20px;
+      display: none; }
+      @media (min-width: 703px) {
+        header div nav {
+          margin: 0 0 0 40px; } }
+      @media (min-width: 950px) {
+        header div nav {
+          background-color: inherit;
+          display: block !important;
+          margin: 22vh 0 0 60px; } }
 
 /* =============
     Footer
@@ -504,6 +521,8 @@ footer {
   background-blend-mode: multiply;
   color: #fff;
   text-align: center; }
+  footer div p:nth-child(2) {
+    padding-top: 30px; }
   footer div section p:nth-child(1) {
     padding-bottom: 30px; }
     @media (min-width: 703px) {
@@ -513,8 +532,7 @@ footer {
     footer div section {
       display: grid;
       grid-template-columns: 25% 50% 25%;
-      grid-template-areas: ". content ." ". form .";
-      padding-bottom: 30px; } }
+      grid-template-areas: ". content ." ". form ."; } }
   @media (min-width: 703px) and (min-width: 703px) {
     footer div section form {
       grid-area: form; } }
@@ -560,55 +578,90 @@ footer {
   .grid2 .content2 {
     grid-area: content; }
 
-@media (min-width: 703px) {
-  #heroimg div {
+#heroimg {
+  padding-top: 40px; }
+  @media (min-width: 703px) {
+    #heroimg {
+      padding-top: 60px; } }
+  @media (min-width: 703px) {
+    #heroimg div {
+      display: grid;
+      grid-template-columns: 20% auto;
+      grid-template-areas: "text hero"; } }
+  @media (min-width: 950px) {
+    #heroimg div {
+      grid-template-areas: ". text" ". hero"; } }
+  #heroimg div p:nth-child(1) {
+    padding: 50px 50px 50px 0;
+    font-weight: 700; }
+    @media (min-width: 703px) {
+      #heroimg div p:nth-child(1) {
+        display: none; } }
+    @media (min-width: 950px) {
+      #heroimg div p:nth-child(1) {
+        display: block;
+        grid-area: text;
+        text-align: right;
+        padding: 0 60px 50px 0; } }
+  #heroimg div p:nth-child(2) {
+    display: none; }
+    @media (min-width: 703px) {
+      #heroimg div p:nth-child(2) {
+        display: block;
+        grid-area: text;
+        display: flex;
+        align-items: center;
+        font-weight: 700; } }
+    @media (min-width: 950px) {
+      #heroimg div p:nth-child(2) {
+        display: none; } }
+  #heroimg div ul {
     display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-areas: "text hero"; } }
-
-#heroimg div p {
-  padding: 50px 50px 50px 0;
-  font-weight: 700; }
-  @media (min-width: 703px) {
-    #heroimg div p {
-      grid-area: text;
-      padding-right: 40px;
-      display: flex;
-      align-items: center; } }
-
-#heroimg div ul {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr); }
-  @media (min-width: 703px) {
-    #heroimg div ul {
-      grid-area: hero; } }
-  #heroimg div ul li:nth-child(1) {
-    background-image: url("../img/hero/hero.jpg");
-    background-size: cover;
-    background-position: 55% center;
-    height: 500px;
-    grid-column: 1 / span 10;
-    grid-row: 1 / span 10; }
-    @media (min-width: 567px) {
-      #heroimg div ul li:nth-child(1) {
-        height: 600px; } }
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr); }
     @media (min-width: 703px) {
-      #heroimg div ul li:nth-child(1) {
-        height: 360px;
-        margin-left: 0; } }
-  #heroimg div ul li:nth-child(2) {
-    background-image: url("../img/hero/sign.png");
-    background-size: contain;
-    background-position: 55% center;
-    height: 170px;
-    background-repeat: no-repeat;
-    grid-column: 1 / span 5;
-    grid-row: 8 / span 3;
-    margin-left: -20px; }
-    @media (min-width: 703px) {
-      #heroimg div ul li:nth-child(2) {
-        grid-row: 7/ span 4; } }
+      #heroimg div ul {
+        grid-area: hero; } }
+    #heroimg div ul li:nth-child(1) {
+      background-image: url("../img/hero/hero.jpg");
+      background-size: cover;
+      background-position: 55% center;
+      height: 500px;
+      grid-column: 1 / span 10;
+      grid-row: 1 / span 10; }
+      @media (min-width: 567px) {
+        #heroimg div ul li:nth-child(1) {
+          height: 600px; } }
+      @media (min-width: 703px) {
+        #heroimg div ul li:nth-child(1) {
+          height: 360px;
+          margin-left: 0; } }
+      @media (min-width: 950px) {
+        #heroimg div ul li:nth-child(1) {
+          height: 500px; } }
+    #heroimg div ul li:nth-child(2) {
+      background-image: url("../img/hero/sign.png");
+      background-size: contain;
+      background-position: 55% center;
+      height: 170px;
+      background-repeat: no-repeat;
+      grid-column: 1 / span 5;
+      grid-row: 8 / span 3;
+      margin-left: -20px; }
+      @media (min-width: 703px) {
+        #heroimg div ul li:nth-child(2) {
+          grid-row: 7/ span 4; } }
+      @media (min-width: 950px) {
+        #heroimg div ul li:nth-child(2) {
+          grid-row: 8/ span 3;
+          margin-left: -150px; } }
+    @media (min-width: 950px) {
+      #heroimg div ul li:nth-child(3) {
+        background-color: #D21D1E;
+        mix-blend-mode: multiply;
+        grid-row: 1 / span 2;
+        grid-column: 3 / span 8;
+        margin-top: -140px; } }
 
 @media (min-width: 703px) {
   #about {
@@ -632,42 +685,45 @@ footer {
 ============= */
 #where {
   overflow-x: hidden; }
-  #where div article h1 {
-    text-align: right;
-    padding-left: 20px; }
   @media (min-width: 703px) {
-    #where div section:nth-child(2) {
+    #where div {
       display: grid;
-      grid-template-columns: 50% 25% auto;
-      grid-template-areas: "img text ."; } }
-  #where div section:nth-child(2) ul {
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas: ". h1 h1 ." "img img text ." ". table table ." ". . poster poster"; } }
+  #where div h1 {
+    text-align: right; }
+    @media (min-width: 703px) {
+      #where div h1 {
+        grid-area: h1;
+        padding-left: 50px; } }
+  #where div ul {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
     padding-bottom: 60px; }
     @media (min-width: 703px) {
-      #where div section:nth-child(2) ul {
+      #where div ul {
         grid-area: img; } }
     @media (min-width: 703px) {
-      #where div section:nth-child(2) ul li:nth-child(1) {
+      #where div ul li:nth-child(1) {
         background-color: #D6B36D;
         mix-blend-mode: multiply;
         grid-row: 1 / span 8;
         grid-column: 1 / span 4;
         margin-left: -40px;
         margin-top: -120px; } }
-    #where div section:nth-child(2) ul li:nth-child(2) {
+    #where div ul li:nth-child(2) {
       background-image: url("../img/where/where.jpg");
       background-size: cover;
       height: 330px;
       grid-row: 1 / span 10;
       grid-column: 1 / span 8; }
       @media (min-width: 703px) {
-        #where div section:nth-child(2) ul li:nth-child(2) {
+        #where div ul li:nth-child(2) {
           grid-column: 1 / span 10;
           grid-row: 1 / span 9;
           height: 230px; } }
-    #where div section:nth-child(2) ul li:nth-child(3) {
+    #where div ul li:nth-child(3) {
       background-image: url("../img/where/people.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -675,33 +731,31 @@ footer {
       grid-column: 6 / span 5;
       margin-right: -30px; }
       @media (min-width: 703px) {
-        #where div section:nth-child(2) ul li:nth-child(3) {
+        #where div ul li:nth-child(3) {
           grid-column: 7 / span 4;
           margin-left: 60px;
           margin-right: -60px;
           grid-row: 8 / span 3; } }
   @media (min-width: 703px) {
-    #where div section:nth-child(2) aside {
+    #where div aside:nth-child(3) {
       grid-area: text; } }
-  #where div section:nth-child(2) aside p {
+  #where div aside:nth-child(3) p {
     font-weight: 700;
     text-align: right; }
-  #where div section:nth-child(2) aside div {
+    @media (min-width: 703px) {
+      #where div aside:nth-child(3) p {
+        padding-left: 30px; } }
+  #where div aside:nth-child(3) div {
     display: flex;
     justify-content: flex-end;
     padding: 30px 0 60px; }
-    #where div section:nth-child(2) aside div a {
+    #where div aside:nth-child(3) div a {
       display: inline-block;
       color: #D6B36D;
       font-weight: 700;
       padding: 10px 15px;
       border: 1px solid #D6B36D; }
-  @media (min-width: 703px) {
-    #where div section:nth-child(3) {
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-template-areas: ". table table ." ". . poster poster"; } }
-  #where div section:nth-child(3) aside {
+  #where aside:nth-child(4) {
     background-image: url("../img/where/poster1.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -709,41 +763,41 @@ footer {
     margin-left: -30px;
     margin-bottom: 50px; }
     @media (min-width: 567px) {
-      #where div section:nth-child(3) aside {
+      #where aside:nth-child(4) {
         background-position: right; } }
     @media (min-width: 703px) {
-      #where div section:nth-child(3) aside {
+      #where aside:nth-child(4) {
         grid-area: poster;
         margin-bottom: 0; } }
   @media (min-width: 703px) {
-    #where div section:nth-child(3) article {
+    #where article {
       grid-area: table;
       padding-bottom: 60px; } }
-  #where div section:nth-child(3) article table {
+  #where article table {
     border-collapse: collapse;
     width: 100%;
     text-align: center; }
-    #where div section:nth-child(3) article table td,
-    #where div section:nth-child(3) article table th {
+    #where article table td,
+    #where article table th {
       padding: 5px 0; }
-    #where div section:nth-child(3) article table tr:nth-child(1) {
+    #where article table tr:nth-child(1) {
       border-bottom: 1px solid #000;
       color: #D21D1E; }
-      #where div section:nth-child(3) article table tr:nth-child(1) th:nth-child(1) {
+      #where article table tr:nth-child(1) th:nth-child(1) {
         border-right: 1px solid #000; }
-      #where div section:nth-child(3) article table tr:nth-child(1) th:nth-child(2) {
+      #where article table tr:nth-child(1) th:nth-child(2) {
         border-right: 1px solid #000; }
-    #where div section:nth-child(3) article table tr:nth-child(2) td:nth-child(1) {
+    #where article table tr:nth-child(2) td:nth-child(1) {
       border-right: 1px solid #000; }
-    #where div section:nth-child(3) article table tr:nth-child(2) td:nth-child(2) {
+    #where article table tr:nth-child(2) td:nth-child(2) {
       border-right: 1px solid #000; }
-    #where div section:nth-child(3) article table tr:nth-child(3) td:nth-child(1) {
+    #where article table tr:nth-child(3) td:nth-child(1) {
       border-right: 1px solid #000; }
-    #where div section:nth-child(3) article table tr:nth-child(3) td:nth-child(2) {
+    #where article table tr:nth-child(3) td:nth-child(2) {
       border-right: 1px solid #000; }
-    #where div section:nth-child(3) article table tr:nth-child(4) td:nth-child(1) {
+    #where article table tr:nth-child(4) td:nth-child(1) {
       border-right: 1px solid #000; }
-    #where div section:nth-child(3) article table tr:nth-child(4) td:nth-child(2) {
+    #where article table tr:nth-child(4) td:nth-child(2) {
       border-right: 1px solid #000; }
 
 #divider1 {
@@ -752,10 +806,10 @@ footer {
   background-size: contain;
   height: 80px;
   background-repeat: no-repeat;
-  margin: 35vh 0 50vh; }
+  margin: 25vh 0 45vh; }
   @media (min-width: 703px) {
     #divider1 {
-      margin: 35vh 0 80vh; } }
+      margin: 25vh 0 75vh; } }
 
 /* =============
     Menu
@@ -769,7 +823,7 @@ footer {
     margin-top: -45%; }
     @media (min-width: 703px) {
       #menu div #video {
-        margin-top: -35%; } }
+        margin-top: -38%; } }
   #menu div h1 {
     text-align: center; }
   @media (min-width: 703px) {
@@ -800,21 +854,22 @@ footer {
   background-image: url("../img/menu/animal2.png");
   background-position: center;
   background-size: contain;
-  height: 500px;
+  height: 400px;
   width: 100vw;
   background-repeat: no-repeat;
-  margin: 30vh 0; }
+  margin: 20vh 0; }
   @media (min-width: 703px) {
     #divider2 {
       background-image: url("../img/menu/animal.png");
       height: 180px;
-      margin: 25vh 0 22vh; } }
+      margin: 25vh 0; } }
 
 /* =============
     Reviews
 ============= */
 #reviews {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-top: 0; }
   @media (min-width: 703px) {
     #reviews div {
       display: grid;
@@ -910,7 +965,7 @@ footer {
   background-size: contain;
   height: 80px;
   background-repeat: no-repeat;
-  margin: 35vh 0; }
+  margin: 25vh 0; }
 
 /* =============
     Gallery

@@ -34,6 +34,9 @@ a{
     @include md {
         grid-template-columns: 40px auto 40px;
     }
+    @include lg {
+        grid-template-columns: 60px auto 60px;
+    }
 
     .content{
         grid-area: content;
