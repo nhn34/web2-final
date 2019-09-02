@@ -25,7 +25,7 @@
     @include md {
         padding-top: 60px;
     }
-    div{
+    >div{
         @include md {
             display: grid;
             grid-template-columns: 20% auto;
@@ -72,7 +72,7 @@
             display: none;
         }
     }
-    ul {
+    #gridhero {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(10, 1fr);
@@ -81,15 +81,28 @@
             grid-area: hero;
         }
 
-        li:nth-child(1) {
-            #carousel {
-                #slide-1 {
-                    background-image: url("../img/hero/hero.jpg");
+        >li:nth-child(1) {
+            grid-column: 1 / span 10;
+            grid-row: 1 / span 10;
+            #slick{
+            .carousel {
+                .slick-prev {
+                    z-index: 100;
+                    margin-left: 50px;
+                }
+                .slick-next {
+                    z-index: 100;
+                    margin-right: 50px;
+                }
+                .slick-prev:before, .slick-next:before {
+                color: $black;
+            }
+                .slides {
+
+                    height: 500px;
                     background-size: cover;
                     background-position: 55% center;
-                    height: 500px;
-                    grid-column: 1 / span 10;
-                    grid-row: 1 / span 10;
+
                     @include sm {
                         height: 600px;
                     }
@@ -106,12 +119,26 @@
                     @include xl {
                         height: 610px;
                     }
+                }
+                #slide-1 {
+                    background-image: url("../img/hero/hero.jpg");
+                }
 
+                #slide-2 {
+                    background-image: url("../img/hero/hero2.jpg");
+                }
+                #slide-3 {
+                    background-image: url("../img/hero/hero3.jpg");
+                }
+                #slide-4 {
+                    background-image: url("../img/hero/hero4.jpg");
                 }
             }
 
+            }
+
         }
-        li:nth-child(2) {
+        >li:nth-child(2) {
             background-image: url("../img/hero/sign.png");
             background-size: contain;
             background-position: 55% center;
@@ -120,6 +147,7 @@
             grid-column: 1 / span 5;
             grid-row: 8 / span 3;
             margin-left: -20px;
+            z-index: 50;
 
             @include md {
                 grid-row: 7/ span 4;
@@ -130,12 +158,13 @@
             }
 
             @include xl {
+                grid-column: 1 / span 4;
                 margin-left: -300px;
                 margin-top: 30px;
             }
         }
 
-        li:nth-child(3) {
+        >li:nth-child(3) {
             @include lg {
                 background-color: $red;
                 mix-blend-mode: multiply;

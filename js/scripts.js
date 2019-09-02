@@ -66,6 +66,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        autoplay: true,
         dots: true
     });
 

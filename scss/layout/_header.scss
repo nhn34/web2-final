@@ -21,7 +21,7 @@ header{
         @include lg {
             grid-template-areas:
             "logo bars"
-            "nav nav";
+            "nav .";
         }
 
         section:nth-child(1) {

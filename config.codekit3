@@ -137,6 +137,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/hero/hero4.jpg": {
+		"ft": 16384,
+		"iS": 1155146,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/hero/hero4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/hero/sign.png": {
 		"ft": 32768,
 		"iS": 648579,
@@ -179,6 +190,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/img/reviews/review0.jpg": {
+		"ft": 16384,
+		"iS": 1020266,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/reviews/review0.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/reviews/review1.jpg": {
