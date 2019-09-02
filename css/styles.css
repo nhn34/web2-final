@@ -652,7 +652,7 @@ footer {
     @media (min-width: 703px) {
       #heroimg div ul {
         grid-area: hero; } }
-    #heroimg div ul li:nth-child(1) {
+    #heroimg div ul li:nth-child(1) #carousel #slide-1 {
       background-image: url("../img/hero/hero.jpg");
       background-size: cover;
       background-position: 55% center;
@@ -660,17 +660,17 @@ footer {
       grid-column: 1 / span 10;
       grid-row: 1 / span 10; }
       @media (min-width: 567px) {
-        #heroimg div ul li:nth-child(1) {
+        #heroimg div ul li:nth-child(1) #carousel #slide-1 {
           height: 600px; } }
       @media (min-width: 703px) {
-        #heroimg div ul li:nth-child(1) {
+        #heroimg div ul li:nth-child(1) #carousel #slide-1 {
           height: 360px;
           margin-left: 0; } }
       @media (min-width: 950px) {
-        #heroimg div ul li:nth-child(1) {
+        #heroimg div ul li:nth-child(1) #carousel #slide-1 {
           height: 500px; } }
       @media (min-width: 1200px) {
-        #heroimg div ul li:nth-child(1) {
+        #heroimg div ul li:nth-child(1) #carousel #slide-1 {
           height: 610px; } }
     #heroimg div ul li:nth-child(2) {
       background-image: url("../img/hero/sign.png");
