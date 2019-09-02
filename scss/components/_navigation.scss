@@ -20,6 +20,7 @@ header {
                 display: inline-block;
                 color: $white;
                 padding: 5px 0;
+                text-decoration: underline;
 
             @include lg {
                 padding: 10px 0;
@@ -28,6 +29,7 @@ header {
             }
             a:hover, a:active {
                 color: $red;
+                text-decoration: none;
             }
 
 

@@ -27,6 +27,18 @@
             "i2 i2 . .";
 
         }
+
+        @include xl {
+            grid-template-columns: auto 360px 360px auto;
+            grid-template-areas:
+            ". h1 h1 ."
+            ". p1 . ."
+            ". . i1 i1"
+            ". . p2 ."
+            "i2 i2 p2 ."
+            "i2 i2 . .";
+
+        }
         h1 {
             text-align: right;
             @include md {
@@ -37,6 +49,9 @@
         p {
             @include lg {
                 width: 75%;
+            }
+            @include xl {
+                width: 100%;
             }
             span {
                 font-weight: 700;
@@ -59,6 +74,9 @@
             @include md {
                 grid-area: i1;
             }
+            @include xl {
+                padding-bottom: 80px;
+            }
             ul {
                 display: grid;
                 grid-template-columns: repeat(10, 1fr);
@@ -66,6 +84,10 @@
 
                 @include lg {
                     margin-top: -80px;
+                }
+
+                @include xl {
+                    margin-top: -200px;
                 }
 
                 li:nth-child(1) {
@@ -76,6 +98,9 @@
                     background-size: cover;
                     @include sm {
                         height: 300px;
+                    }
+                    @include xl {
+                        height: 420px;
                     }
                 }
                 li:nth-child(2) {
@@ -89,6 +114,9 @@
                         grid-row: 6 / span 5;
                         margin-right: 0;
                     }
+                    @include xl {
+                        margin-left: -60px;
+                    }
                 }
                 li:nth-child(3) {
                     background-color: $yellow;
@@ -99,6 +127,9 @@
                         grid-column: 7 / span 4;
                         grid-row: 1 / span 5;
                         margin-right: -60px;
+                    }
+                    @include xl {
+                        margin-right: -100px;
                     }
 
                 }
@@ -137,6 +168,12 @@
                         grid-row: 2 / span 6;
                         height: 300px;
                     }
+                    @include xl {
+                        height: 350px;
+                        grid-column: 1 / span 8;
+                        grid-row: 3 / span 6;
+                    }
+
                 }
                 li:nth-child(2) {
                     background-image: url("../img/reviews/stamp.png");
@@ -157,6 +194,12 @@
                         margin-left: 300px;
                         margin-right: -300px;
                     }
+                    @include xl {
+                        margin-left: 600px;
+                        margin-right: -600px;
+                        margin-top: -100px;
+                        margin-bottom: -100px;
+                    }
 
                 }
                 li:nth-child(3) {
@@ -172,6 +215,9 @@
                         grid-row: 1 / span 10;
                         grid-column: 1 / span 5;
                         margin-left: -60px;
+                    }
+                    @include xl {
+                        margin-left: -100px;
                     }
 
                 }

@@ -57,6 +57,10 @@ header{
                 margin-left: 60px;
                 margin-top: 45px;
             }
+
+            @include xl {
+                margin-left: 100px;
+            }
 }
 
         nav {
@@ -72,6 +76,9 @@ header{
                 background-color: inherit;
                 display: block !important;
                 margin: 22vh 0 0 60px;
+            }
+            @include xl {
+                margin: 25vh 0 0 100px;
             }
 
 

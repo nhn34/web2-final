@@ -22,6 +22,17 @@
             margin-top: -40%;
             padding-bottom: 80px;
         }
+        @include xl {
+            display: grid;
+            grid-template-columns: auto 1024px auto;
+            grid-template-areas: ". video .";
+            margin-top: -33%;
+        }
+        article {
+            @include xl {
+                grid-area: video;
+            }
+        }
     }
 
     h1 {
@@ -43,7 +54,12 @@
         }
         @include lg {
             grid-template-columns: 25% 25% 25% 25%;
-            grid-template-areas: ". text link";
+            grid-template-areas: ". text link .";
+            grid-gap: 15px;
+        }
+        @include xl {
+            grid-template-columns: auto 360px 360px auto;
+            grid-template-areas: ". text link .";
             grid-gap: 15px;
         }
 
@@ -93,7 +109,8 @@
 
     @include lg {
         margin: 20vh 0;
-        height: 500px;
+        height: 450px;
     }
+
 
 }

@@ -3,6 +3,7 @@
 ============= */
 #where {
     overflow-x: hidden;
+    padding-bottom: 0;
 
     div {
         @include md {
@@ -15,13 +16,22 @@
             ". h1 h1 ."
             "img img text ."
             ". table table poster";
-
+        }
+        @include xl {
+            grid-template-columns: auto 360px 360px auto;
+            grid-template-areas:
+            ". h1 h1 ."
+            "img img text ."
+            ". table . poster";
         }
 
         h1 {
             text-align: right;
             @include md {
                 grid-area: h1;
+            }
+            @include xl {
+                padding-bottom: 20px;
             }
         }
 
@@ -32,7 +42,9 @@
             padding-bottom: 60px;
             @include md {
                 grid-area: img;
-
+            }
+            @include xl {
+                padding-bottom: 20px;
             }
 
             li:nth-child(1) {
@@ -43,6 +55,15 @@
                     grid-column: 1 / span 4;
                     margin-left: -40px;
                     margin-top: -120px;
+                }
+                @include lg {
+                    margin-left: -60px;
+                }
+                @include xl {
+                    margin-left: -100px;
+                    grid-column: 1 / span 2;
+                    grid-row: 1 / span 6;
+                    margin-top: -320px;
                 }
             }
 
@@ -60,6 +81,9 @@
 
                 @include lg {
                     height: 300px;
+                }
+                @include xl {
+                    height: 380px;
                 }
             }
 
@@ -79,7 +103,10 @@
                 @include lg {
                     grid-column: 7 / span 4;
                     grid-row: 6 / span 4;
-
+                }
+                @include xl {
+                    margin-right: -100px;
+                    margin-left: 100px;
                 }
 
             }
@@ -101,6 +128,9 @@
                 @include lg {
                     padding-top: 75px;
                 }
+                @include xl {
+                    padding-top: 100px;
+                }
             }
 
             div {
@@ -108,12 +138,16 @@
                 justify-content: flex-end;
                 padding: 20px 0 60px;
 
-                a {
+                a:link, a:visited {
                     display: inline-block;
                     color: $yellow;
                     font-weight: 700;
                     padding: 10px 15px;
                     border: 1px solid $yellow;
+                }
+                a:hover, a:active {
+                    background-color: $yellow;
+                    color: $white;
                 }
             }
         }
@@ -135,7 +169,9 @@
         }
         @include lg {
             margin-left: -80px;
-
+        }
+        @include xl {
+            margin-top: -130px;
         }
     }
 
@@ -151,6 +187,9 @@
             text-align: center;
             @include lg {
                 width: 75%;
+            }
+            @include xl {
+                width: 100%;
             }
 
             td,
@@ -215,6 +254,10 @@
         margin: 15vh 0 45vh;
     }
     @include lg {
-        margin: 15vh 0 75vh;
+        margin: 20vh 0 70vh;
+    }
+
+    @include xl {
+        margin: 15vh 0 65vh;
     }
 }

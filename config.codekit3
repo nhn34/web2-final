@@ -27,28 +27,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/img/An_Choi-2.jpg": {
-		"ft": 16384,
-		"iS": 900882,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/An_Choi-2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/gallery/an-choi-01.w1200.h630.jpg": {
-		"ft": 16384,
-		"iS": 190759,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/gallery/an-choi-01.w1200.h630.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/gallery/g1.jpg": {
 		"ft": 16384,
 		"iS": 543811,
@@ -68,18 +46,7 @@
 		"oAP": "/img/gallery/g2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/gallery/g3.jpg": {
-		"ft": 16384,
-		"iS": 1671007,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/gallery/g3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/gallery/g4.png": {
@@ -101,7 +68,7 @@
 		"oAP": "/img/gallery/g5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/gallery/g6.jpg": {
@@ -123,7 +90,7 @@
 		"oAP": "/img/gallery/gn.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/header/logo.png": {
@@ -143,6 +110,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/hero/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/hero/hero2.jpg": {
+		"ft": 16384,
+		"iS": 190759,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/hero/hero2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/hero/hero3.jpg": {
+		"ft": 16384,
+		"iS": 519012,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/hero/hero3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -181,28 +170,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/menu/drinks.jpeg": {
-		"ft": 16384,
-		"iS": 2405067,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/menu/drinks.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/menu/food.jpg": {
-		"ft": 16384,
-		"iS": 519012,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/menu/food.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/reviews/poster2.png": {
 		"ft": 32768,
 		"iS": 626274,
@@ -216,7 +183,7 @@
 		},
 	"/img/reviews/review1.jpg": {
 		"ft": 16384,
-		"iS": 1026784,
+		"iS": 1155146,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/reviews/review1.jpg",
@@ -233,7 +200,7 @@
 		"oAP": "/img/reviews/review2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/reviews/stamp.png": {
@@ -310,7 +277,7 @@
 		"oAP": "/img/where/where.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/index.html": {
