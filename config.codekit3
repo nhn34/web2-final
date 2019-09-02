@@ -40,13 +40,13 @@
 		},
 	"/img/gallery/g2.jpg": {
 		"ft": 16384,
-		"iS": 1829111,
+		"iS": 593208,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/gallery/g2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/img/gallery/g4.png": {
@@ -62,13 +62,13 @@
 		},
 	"/img/gallery/g5.jpg": {
 		"ft": 16384,
-		"iS": 1051125,
+		"iS": 307123,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/gallery/g5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/img/gallery/g6.jpg": {
@@ -139,7 +139,7 @@
 		},
 	"/img/hero/hero4.jpg": {
 		"ft": 16384,
-		"iS": 1155146,
+		"iS": 308748,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/hero/hero4.jpg",
@@ -205,7 +205,7 @@
 		},
 	"/img/reviews/review1.jpg": {
 		"ft": 16384,
-		"iS": 1155146,
+		"iS": 308748,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/img/reviews/review1.jpg",
