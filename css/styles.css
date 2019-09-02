@@ -661,8 +661,12 @@ footer {
       #heroimg > div #gridhero > li:nth-child(1) #slick .carousel .slick-next {
         z-index: 100;
         margin-right: 50px; }
-      #heroimg > div #gridhero > li:nth-child(1) #slick .carousel .slick-prev:before, #heroimg > div #gridhero > li:nth-child(1) #slick .carousel .slick-next:before {
-        color: #000; }
+      #heroimg > div #gridhero > li:nth-child(1) #slick .carousel .slick-dots {
+        margin-bottom: 40px; }
+      #heroimg > div #gridhero > li:nth-child(1) #slick .carousel .slick-dots li button:before {
+        color: #fff; }
+      #heroimg > div #gridhero > li:nth-child(1) #slick .carousel .slick-dots li.slick-active button:before {
+        color: #fff; }
       #heroimg > div #gridhero > li:nth-child(1) #slick .carousel .slides {
         height: 500px;
         background-size: cover;
