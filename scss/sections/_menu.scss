@@ -18,19 +18,33 @@
         @include md {
             margin-top: -38%;
         }
+        @include lg {
+            margin-top: -40%;
+            padding-bottom: 80px;
+        }
     }
 
     h1 {
         text-align: center;
     }
 
-    div {
+    div:nth-child(3) {
+        @include lg {
+            padding-bottom: 50px;
+        }
+    }
 
+    div {
         @include md {
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-areas: "text link";
             grid-gap: 20px;
+        }
+        @include lg {
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-areas: ". text link";
+            grid-gap: 15px;
         }
 
         p {
@@ -40,6 +54,7 @@
                 grid-area: text;
             }
         }
+
         a:link, a:visited {
             padding: 25px 0;
             background-color: $red;
@@ -51,6 +66,10 @@
             margin: 30px 0 50px;
             @include md {
                 grid-area: link;
+            }
+            @include lg {
+                margin: 0;
+                height: 18px;
             }
         }
     }
@@ -70,6 +89,11 @@
         background-image: url("../img/menu/animal.png");
         height: 180px;
         margin: 25vh 0;
+    }
+
+    @include lg {
+        margin: 20vh 0;
+        height: 500px;
     }
 
 }

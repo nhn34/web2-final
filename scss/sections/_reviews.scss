@@ -17,6 +17,16 @@
             "p2 p2 . ."
             "i2 i2 i2 .";
         }
+        @include lg {
+            grid-template-areas:
+            ". h1 h1 ."
+            ". p1 p1 ."
+            ". . i1 i1"
+            ". . p2 p2"
+            "i2 i2 p2 p2"
+            "i2 i2 . .";
+
+        }
         h1 {
             text-align: right;
             @include md {
@@ -25,6 +35,9 @@
         }
 
         p {
+            @include lg {
+                width: 75%;
+            }
             span {
                 font-weight: 700;
             }
@@ -51,6 +64,10 @@
                 grid-template-columns: repeat(10, 1fr);
                 grid-template-rows: repeat(10, 1fr);
 
+                @include lg {
+                    margin-top: -80px;
+                }
+
                 li:nth-child(1) {
                     background-image: url("../img/reviews/review1.jpg");
                     height: 220px;
@@ -67,12 +84,22 @@
                     grid-row: 1 / span 5;
                     background-size: cover;
                     margin-right: -50px;
+                    @include lg {
+                        grid-column: 1 / span 3;
+                        grid-row: 6 / span 5;
+                        margin-right: 0;
+                    }
                 }
                 li:nth-child(3) {
                     background-color: $yellow;
                     mix-blend-mode: multiply;
                     grid-column: 1 / span 5;
                     grid-row: 7 / span 4;
+                    @include lg {
+                        grid-column: 7 / span 4;
+                        grid-row: 1 / span 5;
+                        margin-right: -60px;
+                    }
 
                 }
             }
@@ -88,6 +115,10 @@
                 grid-template-columns: repeat(10, 1fr);
                 grid-template-rows: repeat(10, 1fr);
 
+                @include lg {
+                    margin-top: -80px;
+                }
+
                 li:nth-child(1) {
                     background-image: url("../img/reviews/review2.jpg");
                     height: 250px;
@@ -99,6 +130,12 @@
                         grid-column: 1 / span 10;
                         grid-row: 3 / span 8;
                         height: 350px;
+                    }
+
+                    @include lg {
+                        grid-column: 1 / span 9;
+                        grid-row: 2 / span 6;
+                        height: 300px;
                     }
                 }
                 li:nth-child(2) {
@@ -114,6 +151,12 @@
                         margin-right: -80px;
                         margin-top: -200px;
                     }
+                    @include lg {
+                        grid-row: 8 / span 3;
+                        margin-top: -50px;
+                        margin-left: 300px;
+                        margin-right: -300px;
+                    }
 
                 }
                 li:nth-child(3) {
@@ -123,6 +166,12 @@
                         grid-column: 1 / span 3;
                         grid-row: 1 / span 7;
                         margin-left: -40px;
+                    }
+
+                    @include lg {
+                        grid-row: 1 / span 10;
+                        grid-column: 1 / span 5;
+                        margin-left: -60px;
                     }
 
                 }
@@ -138,5 +187,8 @@
     height: 80px;
     background-repeat: no-repeat;
     margin: 25vh 0;
+    @include md {
+        margin: 20vh 0;
+    }
 
 }

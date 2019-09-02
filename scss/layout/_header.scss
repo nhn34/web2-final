@@ -7,6 +7,10 @@ header{
     width: 100%;
     z-index: 100;
 
+    @include lg {
+        position: absolute;
+    }
+
     div {
         display: grid;
         grid-template-columns: 20% 80%;

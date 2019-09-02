@@ -54,6 +54,7 @@ function burgerClick(){
 }
 
 $burgerContainer.on("click", burgerClick);
+$navA.on( "click", burgerClick);
 /* ==============================
 Burger Animation End
 ============================== */

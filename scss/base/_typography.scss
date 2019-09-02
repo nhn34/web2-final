@@ -8,6 +8,14 @@ body{
         color: $red;
         font-size: rem-calc(26);
         padding-bottom: 40px;
+
+        @include md {
+            font-size: rem-calc(30);
+        }
+        @include lg {
+            font-size: rem-calc(36);
+            padding-bottom: 80px;
+        }
     }
     p {
         line-height: 24px;
