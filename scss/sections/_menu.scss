@@ -14,7 +14,7 @@
 
     #video {
         padding-bottom: 50px;
-        margin-top: -45%;
+        margin-top: -48%;
         @include md {
             margin-top: -38%;
         }
@@ -88,6 +88,11 @@
                 height: 18px;
             }
         }
+        a:hover, a:active {
+            background-color: transparent;
+            border: 1px solid $red;
+            color: $red;
+        }
     }
 }
 }
@@ -99,7 +104,7 @@
     height: 400px;
     width: 100vw;
     background-repeat: no-repeat;
-    margin: 20vh 0;
+    margin: 15vh 0;
 
     @include md {
         background-image: url("../img/menu/animal.png");

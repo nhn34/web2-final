@@ -971,7 +971,7 @@ footer {
   background-size: contain;
   height: 80px;
   background-repeat: no-repeat;
-  margin: 25vh 0 45vh; }
+  margin: 25vh 0 40vh; }
   @media (min-width: 703px) {
     #divider1 {
       margin: 15vh 0 45vh; } }
@@ -991,7 +991,7 @@ footer {
   background-blend-mode: multiply; }
   #menu div #video {
     padding-bottom: 50px;
-    margin-top: -45%; }
+    margin-top: -48%; }
     @media (min-width: 703px) {
       #menu div #video {
         margin-top: -38%; } }
@@ -1050,6 +1050,10 @@ footer {
       #menu div div a:link, #menu div div a:visited {
         margin: 0;
         height: 18px; } }
+  #menu div div a:hover, #menu div div a:active {
+    background-color: transparent;
+    border: 1px solid #D21D1E;
+    color: #D21D1E; }
 
 #divider2 {
   background-image: url("../img/menu/animal2.png");
@@ -1058,7 +1062,7 @@ footer {
   height: 400px;
   width: 100vw;
   background-repeat: no-repeat;
-  margin: 20vh 0; }
+  margin: 15vh 0; }
   @media (min-width: 703px) {
     #divider2 {
       background-image: url("../img/menu/animal.png");
