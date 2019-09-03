@@ -1067,10 +1067,10 @@ footer {
     #divider2 {
       background-image: url("../img/menu/animal.png");
       height: 180px;
-      margin: 25vh 0; } }
+      margin: 20vh 0; } }
   @media (min-width: 950px) {
     #divider2 {
-      margin: 20vh 0;
+      margin: 17vh 0;
       height: 450px; } }
 
 /* =============
