@@ -26,7 +26,7 @@
             display: grid;
             grid-template-columns: auto 1024px auto;
             grid-template-areas: ". video .";
-            margin-top: -33%;
+            margin-top: -32%;
         }
         article {
             @include xl {

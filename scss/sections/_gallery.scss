@@ -85,7 +85,7 @@
                 grid-row: 1 / span 9;
             }
             @include xl {
-                height: 440px;
+                height: 55vh;
             }
         }
 
@@ -110,6 +110,9 @@
         grid-template-rows: repeat(10, 1fr);
         @include md {
             grid-area: ul2;
+        }
+        @include xl {
+            padding-top: 80px;
         }
 
         li:nth-child(1) {
@@ -157,6 +160,9 @@
         @include lg {
             grid-template-columns: repeat(20, 1fr);
         }
+        @include xl {
+            padding-top: 80px;
+        }
 
         li:nth-child(1) {
             background-image: url("../img/gallery/g5.jpg");
@@ -172,7 +178,7 @@
                 height: 480px;
             }
             @include xl {
-                height: 580px;
+                height: 80vh;
                 grid-column: 5 / span 16;
                 margin-left: 12px;
             }

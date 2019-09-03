@@ -8,16 +8,35 @@ footer{
     color: $white;
     text-align: center;
 
-    div {
+    .content {
+
+        @include lg {
+            display: grid;
+            grid-template-columns: 30% auto 30%;
+            grid-template-areas: "mark subscribe social";
+        }
         p:nth-child(2) {
             padding-top: 30px;
+            @include lg {
+                grid-area: mark;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
         }
 
         section {
+            @include lg {
+                grid-area: subscribe;
+            }
             p:nth-child(1) {
                 padding-bottom: 30px;
                 @include md {
                     grid-area: content;
+                }
+                @include lg {
+                    padding-bottom: 10px;
                 }
             }
         @include md {
@@ -26,17 +45,38 @@ footer{
             grid-template-areas:
             ". content ."
             ". form .";
-
-
+}
+@include lg {
+    display: block;
+}
             form {
                 @include md {
                     grid-area: form;
                 }
             }
+
+    }
+    article {
+        @include lg {
+            grid-area: social;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
+        a:link, a:visited {
+            display: inline-block;
+            color: $white;
+            font-size: rem-calc(36);
+            padding: 10px 5px 0;
+            @include lg {
+                font-size: rem-calc(20);
+                padding: 0 0 0 20px;
 
-
-
+            }
+        }
+        a:hover, a:active {
+            color: $yellow;
+        }
     }
 }
 }

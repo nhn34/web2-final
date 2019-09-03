@@ -19,7 +19,7 @@ textarea {
 form{
 	display: grid;
 
-	grid-template-columns: 78% auto;
+	grid-template-columns: 75% auto;
 	grid-template-areas:
 	"email button";
 
@@ -43,7 +43,7 @@ form{
 			border: none;
 			color: $white;
 			background-color: $yellow;
-			padding: 10px;
+			padding: 10px 0;
 		 	width: 100%;
 			font-weight: 700;
 		}

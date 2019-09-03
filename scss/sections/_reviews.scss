@@ -100,7 +100,7 @@
                         height: 300px;
                     }
                     @include xl {
-                        height: 420px;
+                        height: 50vh;
                     }
                 }
                 li:nth-child(2) {
@@ -169,7 +169,7 @@
                         height: 300px;
                     }
                     @include xl {
-                        height: 350px;
+                        height: 45vh;
                         grid-column: 1 / span 8;
                         grid-row: 3 / span 6;
                     }
